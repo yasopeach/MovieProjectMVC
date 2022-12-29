@@ -1,0 +1,14 @@
+﻿@model MovieProject.Entity.Category
+
+<form asp-controller="Category" asp-action="UpdateCategory" method="post">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Cat Name</label>
+                <input type="text" class="form-control" asp-for="CategoryName" />
+            </div>
+            <input type="hidden" name="CategoryId" value="@Model.CategoryId" />
+            <button class="btn btn-success" type="submit">Update Cat</button>
+        </div>
+    </div>
+</form>

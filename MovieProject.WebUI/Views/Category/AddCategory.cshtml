@@ -1,0 +1,22 @@
+﻿@model MovieProject.Entity.Category
+
+<form asp-controller="Category" asp-action="AddCategory" method="post">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Category Name:</label>
+                
+                <input type="text" class="form-control" name="CategoryName" />
+            </div>
+
+            <button class="btn btn-primary" type="submit">Create Category</button>
+            
+        </div>
+        <div>
+           <br />
+
+        <a asp-action="CategoryList" asp-controller="Category" class="btn btn-danger btn-sm p-3 ">Category List</a>
+        </div>
+    </div>
+</form>
+<br />
